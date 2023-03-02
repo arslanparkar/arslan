@@ -1,9 +1,14 @@
 {
-    "homepage": "https://arslanparkar.github.io/arslan/tree/test-react",
+    "homepage": "https://arslanparkar.github.io/arslan",
   "name": "@landing/006-next",
   "version": "0.1.0",
   "private": true,
   "scripts": {
+      "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
     "dev": "next dev",
     "build": "next build",
     "serve": "next start",
